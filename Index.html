@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header part-->
+    <header>
+        <!--Nav Bar-->
+        <nav>
+            <div id="navLogo"> <img src="https://www.thesouledstore.com/static/img/non-member-logo2.4f4c390.gif">
+            </div>
+
+            <div class="searchBox">
+                <input id="searchInput" placeholder="         What are you looking for ?"></input>
+
+                <button id="searchLogo"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="cart">
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div id="cartFont">My Cart</div>
+            </div>
+
+            <div class="wishlist">
+                <div><i class="fa-solid fa-heart"></i></div>
+                <div id="wishlistFont">Wishlist</div>
+            </div>
+
+            <div class="login">
+                <div><i class="fa-regular fa-user"></i></div>
+                <div id="loginFont">Login</div>
+            </div>
+
+            <div class="bell">
+                <div><i class="fa-regular fa-bell"></i></div>
+            </div>
+        </nav>
+
+        <!-- Menu Bar-->
+        <div class="menuBar">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Grocery</a></li>
+                    <li>
+                        <a href="#">Electronics&#9662</a>
+                        <div class="dropdown">
+                            <a style="font-size: 17px;" href="#">Computer Store</a>
+                            <a style="font-size: 17px;" href="#">Laptops</a>
+                            <a style="font-size: 17px;" href="#">Cameras</a>
+                            <a style="font-size: 17px;" href="#">Gaming</a>
+                            <a style="font-size: 17px;" href="#">Powerbanks</a>
+                            <a style="font-size: 17px;" href="#">Tablets</a>
+                            <a style="font-size: 17px;" href="#">Accessories</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Fashion&#9662</a>
+                        <div class="dropdown">
+                            <a style="font-size: 17px;" href="#">Men</a>
+                            <a style="font-size: 17px;" href="#">Women</a>
+                            <a style="font-size: 17px;" href="#">Kids</a>
+                            <a style="font-size: 17px;" href="#">Luggages</a>
+                            <a style="font-size: 17px;" href="#">Footware</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Mobiles</a></li>
+                    <li>
+                        <a href="#">Beauty, Toys & More&#9662</a>
+                         <div class="dropdown">
+                            <a style="font-size: 17px;" href="#">Beauty & Care</a>
+                            <a style="font-size: 17px;" href="#">Men's Care</a>
+                            <a style="font-size: 17px;" href="#">Drinkss</a>
+                            <a style="font-size: 17px;" href="#">Nutrition</a>
+                            <a style="font-size: 17px;" href="#">Health Care</a>
+                            <a style="font-size: 17px;" href="#">Toys</a>
+                            <a style="font-size: 17px;" href="#">Books</a>
+                            <a style="font-size: 17px;" href="#">Sports</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content Part-->
+
+    <!-- Carousel -->
+     <section id="slider">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                 <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/users/artists/20250508115058-cp-1.jpg?format=webp&w=1500&dpr=1.0" class="d-block w-100" alt="...">
+                 </div>
+                 <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://images.vexels.com/media/users/3/335953/raw/5c79d20959005bc26ba1cc2d586a584e-landscape-travelling-t-shirt-design.jpg" class="d-block w-100" alt="...">
+                 </div>
+                 <div class="carousel-item" data-bs-interval="3000">
+                     <img src="https://i.pinimg.com/736x/c1/f3/f5/c1f3f505691e5ab78550d8df92c93d17.jpg" class="d-block w-100" alt="...">
+                 </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <button id="coverImageButton">
+                <a id="coverImageFont" href="https://www.thesouledstore.com/artists/marvel-official-merchandise">
+                   Explore for More 
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!--Cover Image-->
+    <!-- <div id="box1">
+        <div id="coverImage">
+            <button id="coverImageButton"><a id="coverImageFont"
+                    href="https://www.thesouledstore.com/artists/marvel-official-merchandise">Explore for
+                    more</a></button>
+        </div>
+    </div> -->
+
+    <!--Box 2-->
+    <div id="box2">
+        <div id="box2Main">
+            <div id="box2Text">
+                <h1>Shopping made easy</h1>
+                <p>Enjoy reliability, secure deliveries and hassle-free returns.</p>
+            </div>
+            <div id="box2Button">Start Now</div>
+        </div>
+    </div>
+
+    <!--Iten Strip 1-->
+    <div class="itemStrip">
+        <div class="itemStripBox">
+            <h1>Men's Top Picks</h1>
+            <div class="itemStripBoxInner">
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/CT_2_tDmTaCN.jpg?format=webp&w=480&dpr=1.0">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Oversized T-Shirts</p>
+                        <h3>Loot Deals</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Web_tile.5_2EBCPn7.jpg?format=webp&w=480&dpr=1.0">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>All Bottoms</p>
+                        <h3>From &#8377 799</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Web_tile_Mk17qNP.jpg?format=webp&w=480&dpr=1.0">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Sneakers</p>
+                        <h3>From &#8377 599</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/CAPS.1_ab0OeKN.jpg?format=webp&w=480&dpr=1.0">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Caps</p>
+                        <h3>From &#8377 299</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/BACKPACKS1_kdMil6b.jpg?format=webp&w=480&dpr=1.0">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Backpacks</p>
+                        <h3>From &#8377 699</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/1.7_jIcQnpD.jpg?format=webp&w=480&dpr=1.0">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Jackets</p>
+                        <h3>From &#8377 1,399</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Item Strip 2-->
+    <div class="itemStrip">
+        <div class="itemStripBox">
+            <h1>Best of Electronics</h1>
+            <div class="itemStripBoxInner">
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://rukminim2.flixcart.com/image/120/120/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=80">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>True Wireless</p>
+                        <h3>Grab Now</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://rukminim2.flixcart.com/image/120/120/xif0q/dslr-camera/u/q/3/autofocus-16x-digital-zoom-rechargeable-camera-48-dc306-4k-hd-original-imahdyhqyyaxgnmj.jpeg?q=80">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Top Camera</p>
+                        <h3>Shop Now !</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://rukminim2.flixcart.com/image/120/120/kz1lle80/smartwatch/m/f/q/-original-imagb54tb6fpurze.jpeg?q=80">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Noise Smart Watches</p>
+                        <h3>From &#8377 1,099</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://rukminim2.flixcart.com/image/120/120/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=80">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Best Selling Speaker</p>
+                        <h3>From &#8377 499</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://rukminim2.flixcart.com/image/120/120/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=80">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Fastrack Smart Watches</p>
+                        <h3>From &#8377 1,399</h3>
+                    </div>
+                </div>
+                <div class="stripItems">
+                    <div class="stripImageBox"><img class="fitImage"
+                            src="https://rukminim2.flixcart.com/image/120/120/xif0q/monitor/6/o/k/-original-imah9hc5md7furca.jpeg?q=80">
+                    </div>
+                    <div class="stripTextBox">
+                        <p>Monitors</p>
+                        <h3>From &#8377 7949</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Catagories-->
+    <div id="catagories">
+        <div id="heading">
+            <h1>Browse Different Catagories</h1>
+        </div>
+        <div class="catagoryLine">
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9lYTakBxDl_HdYDXy-YtTvofxxPtLl0eUA&s">
+                <h3>Tech</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHb8LgOKd9Ig9rG3mYNlxA4ah5X3RQ6k-ImQ&s">
+                <h3>Beauty & Health</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWpTPBIVVNHNeK5R1tQf50143D4UcH9WIHEQ&s">
+                <h3>Watches</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr9BGy_n4S1UAk3s_kCaMTp-I-1GKrnJm1EQ&s">
+                <h3>Jewelry</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU0tOnG2rxsZm4-6cL4qEnPDFtY8ida85XLw&s">
+                <h3>Footwear</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidLYjSHV5iI12_YJydt-NIlxT8qY8qjpiQw&s">
+                <h3>Home Appliances</h3>
+            </div>
+        </div>
+
+        <div class="catagoryLine">
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNpFwzyTx2S1mkrOSO8htpCk1gYo8h5oIEow&s">
+                <h3>Kid's Wear</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOBnah54iqFdlkMXXhUavUlwJgvga0EKAO9g&s">
+                <h3>Toys & Games</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuk_PQNehX4gJ-tQOLOoUjyvbgtenP0R925Q&s">
+                <h3>Home Decors</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbOb26VOV4IDyPr-GKihxR2iq_Y6PE3JxrMQ&s">
+                <h3>Makeup</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CTpolAFVA5TF6WDSPSDgSiwpC2C7aGSlnA&s">
+                <h3>Stationary</h3>
+            </div>
+            <div class="catagory">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ6ZywS_LCwp2gqubgDZfNeH5NV8bBgutp6Q&s">
+                <h3>Action Figure</h3>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Best Sellers Part-->
+    <div class="headingWrapper">
+        <div id="headingWrapperFont">
+            <h2>Our Best Sellers</h2>
+        </div>
+    </div><br><br>
+    <div id="bestSellers">
+        <div class="lines">
+
+            <div class="product">
+                <img src="https://veirdo.in/cdn/shop/files/18_5.jpg?v=1723283778">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+            <div class="product">
+                <img src="https://cdn.pixabay.com/photo/2022/10/09/09/12/woman-7508618_1280.jpg">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+            <div class="product">
+                <img
+                    src="https://blackstop.in/cdn/shop/products/4_6c459fdc-f0ef-4ccf-9376-9e997d6e9a81.png?v=1749023187">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9p2s2pMMi_IuLVDicrId1klwPr2SE5ZhjOQ&s">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+        </div>
+        <div class="lines">
+            <div class="product">
+                <img src="https://wisetrolley.com/wp-content/uploads/2021/06/HTML-T-shirt-Black.jpg">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+            <div class="product">
+                <img src="https://pronk.in/cdn/shop/files/29_1894301a-e388-4e9e-ad17-44ec83238790.jpg?v=1708775140">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+            <div class="product">
+                <img src="https://wolfit.in/cdn/shop/files/wolfit-dark-oversize-tshirt-black.jpg?v=1726142495">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+            <div class="product">
+                <img src="https://veirdo.in/cdn/shop/files/Artboard8.png?v=1724158576">
+                <h3>T-shirt</h3>
+                <h3>&#8377 999</h3>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <!--Footer-->
+    <footer>
+        <!--Footer 1st Strip-->
+        <div id="footer1">
+            <h1>HOME GROWN INDIAN BRAND</h1>
+        </div>
+
+        <!--Footer Customer Strip-->
+        <div id="footer2">
+            <h1>OVER </h1>
+            <div id="people">
+                <h1>6 MILLION </h1>
+            </div>
+            <h1> HAPPY CUSTOMERS</h1>
+        </div>
+
+        <!--Footer Lists-->
+        <div id="footer3">
+            <ul class="list">
+                <li class="heading">NEED HELP</li>
+                <li>Contact Us</li>
+                <li>Returns & Refunds</li>
+                <li>FAQs</li>
+                <li>My Account</li>
+            </ul>
+            <ul class="list">
+                <li class="heading">COMPANY</li>
+                <li>About Us</li>
+                <li>Investor Relation</li>
+                <li>Career</li>
+                <li>Gift Vouchers</li>
+            </ul>
+            <ul class="list">
+                <li class="heading">MORE INFO</li>
+                <li>T & C</li>
+                <li>Privacy Policy</li>
+                <li>SiteMap</li>
+                <li>Get Notified</li>
+            </ul>
+            <ul class="list">
+                <li class="heading">STORE NEAR ME</li>
+                <li>Bhatinda</li>
+                <li>Gandhinagar</li>
+                <li>Hubali</li>
+                <li>Surat</li>
+            </ul>
+        </div>
+
+        <!--Footer Icon and Copyright-->
+        <div id="footer4">
+            <img src="https://www.thesouledstore.com/static/img/non-member-logo2.4f4c390.gif" height="100px">
+            <p><i class="fa-regular fa-copyright"></i> The Souled Store 2025-26</p>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
